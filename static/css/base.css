@@ -1,7 +1,109 @@
+/* --------- root varible -------- */
+/* :root {
+  background: yellow;
+  --text-03:rgba(107, 107, 107, 0.925);
+} */
+
+/* -------- common factors ------- */
 body {
-    background-color: rgb(218, 218, 218);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.main-color {
+  color: #8466B0;
+}
+
+.pw-txt1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.pw-txt3 {
+  font-size: 1.5rem;
+}
+
+
+
+/* ----------- slide one ---------- */
+.intro-section .pw-txt3 {
+  font-weight: 300;
+  letter-spacing: 12px;
+  color: var(--text-03);
+}
+
+.intro-section .pw-txt1 {
+  font-family: open sans, Sans-serif;
+  text-transform: uppercase;
+}
+
+.intro-section .track-inner {
+  padding-top: 11.3vw;
+  padding-bottom: 16.5vw;
+
+}
+
+.media {
+  transform: translate(73%, 0px);
+  transition: .8s linear;
+
+}
+
+.media:hover {
+  transform: translate(8%, 0px);
+}
+
+.media-wrap {
+  position: absolute;
+  overflow: hidden;
+  float: right;
+}
+
+.intro-section .media-wrap-outer {
+  transform: translateX(-10.6%);
+  position: absolute;
+  width: 66rem;
+  height: 70%;
+}
+
+@media screen and (max-width:1340px) {
+
+  .intro-section .media-wrap-outer {
+    transform: translateX(-40.6%);
   }
 
-.main-color{
-  color: #8466B0;
+  .media:hover {
+    transform: translate(8%, 0px);
+
+  }
+}
+
+@media screen and (max-width:1040px) {
+  .intro-section .media-wrap-outer {
+    position: relative;
+    transform: translateX(0%);
+  }
+
+  .media {
+    transform: translate(8%, 10px);
+
+  }
+
+  .media-wrap {
+    position: relative;
+    height: 10%;
+  }
+
+  .intro-section .col-6 {
+    width: 100% !important;
+  }
 }
