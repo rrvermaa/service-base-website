@@ -17,8 +17,6 @@ a {
   color: black;
 }
 
-
-
 .main-color {
   color: #8466B0;
 }
@@ -59,7 +57,7 @@ a {
 }
 
 .media:hover {
-  transform: translate(8%, 0px);
+  transform: translate(0%, 0px);
 }
 
 .media-wrap {
@@ -69,7 +67,7 @@ a {
 }
 
 .intro-section .media-wrap-outer {
-  transform: translateX(-10.6%);
+  transform: translateY(-25px);
   position: absolute;
   width: 66rem;
   height: 70%;
@@ -106,4 +104,84 @@ a {
   .intro-section .col-6 {
     width: 100% !important;
   }
+}
+
+
+/* ----------------- slide-two --------------  */
+
+.solution-section {
+  position: relative; /* Set the main div as the reference for absolute positioning */
+  width: 100%;
+  height: 70vh;
+  padding: 10px;
+}
+.images{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.layer1,
+.layer2 {
+  position: absolute;
+  padding: 10px;
+}
+.images img{
+  width: 80%;
+}
+.start-text{
+  align-items: center;
+}
+.quality-info{
+  display: flex;
+  position: relative;
+}
+.quality-info #marker{
+  position: absolute;
+  height: 4px;
+  left: 0;
+  width: 0;
+  background: #ff3c78;
+  bottom: -8px;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.quality-info .hide{
+  position: absolute;
+  height: 4px;
+  left: 0;
+  width: 174px;
+  background: #ff3c78;
+  bottom: -8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+ .quality-info p{
+  position: relative;
+  padding: 0 20px ;
+  cursor: pointer;
+
+}
+.quality-info p{
+  font-size: 17px;
+  font-weight: 500;
+}
+.qualities{
+  display: flex;
+}
+#management-qualities{
+  display: block;
+}
+#industry-qualities{
+  display: none;
+}
+.qualities .list-group{
+  font-size: 17px;
+}
+.qualities .list-group i{
+  font-size: 20px;
+}
+.qualities .list-group .d-flex:hover i{
+  color: #ff3c78;
 }

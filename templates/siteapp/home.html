@@ -1,107 +1,136 @@
 {% extends "base/base.html" %}
 {% load static %}
 {% block maincontent %}
-<body >
-    <div class="text-center">
-       
-        {% comment %} home {% endcomment %}
 
-        <div class="card text-white bg-primary mb-3 mt-5" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Primary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Secondary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Success card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Danger card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Warning card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Info card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Light card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Dark card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
 
-    </div>
-    
-    
-    <!-- slide one -->
-    <section class="container">
-        <div class="intro-section row">
-            <div class="track-inner col-6">
-                <div >
-                    <div >
-                        <p class="pw-txt3">WELCOME TO AIVERSE,</p>
-                    </div>
+<body>
+
+
+        <!-- slide one -->
+        <section class="container">
+            <div class="intro-section row">
+                <div class="track-inner col-6">
                     <div>
-                        <p class="pw-txt1">Turning and bringing <br><span>idea</span> into <span>amazing</span> product through next level visual display</p>
+                        <div>
+                            <p class="pw-txt3">WELCOME TO AIVERSE,</p>
+                        </div>
+                        <div>
+                            <p class="pw-txt1">Turning and bringing <br><span>idea</span> into <span>amazing</span>
+                                product through next level visual display</p>
+                        </div>
+                        <hr>
                     </div>
-                    <hr>
+                </div>
+
+                <div class="media-wrap-outer">
+                    <div class="media-wrap cursor-pointer view-cursor">
+                        <video playsinline="" loop="" autoplay="" muted="" class="media muted" preload="auto">
+
+                            <!-- Provide the Safari video -->
+                            <source src="https://kreativa.studio/wp-content/uploads/2022/08/Kreativa_studio_WEB.mp4"
+                                type="video/mp4">
+
+                            <!-- .. and the Chrome video -->
+                            <source src="https://kreativa.studio/wp-content/uploads/2022/08/Kreativa_studio_WEB.webm"
+                                type="video/webm">
+                        </video>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="media-wrap-outer  ">
-                <div class="media-wrap cursor-pointer view-cursor" >
-                    <video playsinline="" loop="" autoplay="" muted="" class="media muted" preload="auto" >
-    
-                                                                <!-- Provide the Safari video -->
-                            <source src="https://kreativa.studio/wp-content/uploads/2022/08/Kreativa_studio_WEB.mp4" type="video/mp4">
-                        
-                                                                <!-- .. and the Chrome video -->
-                            <source src="https://kreativa.studio/wp-content/uploads/2022/08/Kreativa_studio_WEB.webm" type="video/webm">
-                    </video>
+        <!-- slide two -->
+        <section class="container">
+            <div class="solution-section row m-0 p-0">
+                <div class="col-5 ">
+                    <div class="images">
+                        <div class="layer1">
+                            <img src="{% static 'media/images/layer-1.jpeg'%}" alt="">
+                        </div>
+                        <div class="layer2">
+                            <img src="{% static 'media/images/layer-2.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <div>
+                        <div>
+                            <div class="d-flex start-text">
+                                <div class="col-2 pe-3">
+                                    <hr>
+                                </div>
+                                <a>We make the new.</a>
+                            </div>
+                            <div class="mt-2">
+                                <h3>Management solutions <b>adapted to</b> medium and large companies</h3>
+                            </div>
+                            <div class="mt-3">
+                                <p>Companies have common management challenges, which is why we have a set of comprehensive and adaptable management solutions, both for the critical areas of the companies and for the sectors of activity in which they are integrated</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 ">
+                            <div class="quality-info">
+                                <div id="marker"></div>
+                                <div id="hide" class="hide"></div>
+                                <div id="marker-item">
+                                    <p href="" id="marker-item-1">Management Area</p>
+                                </div>
+                                <div id="marker-item">
+                                    <p href="" id="marker-item-2" >Industry Area</p>
+                                </div>
+                            </div>
+
+                            <div class="qualities m-4">
+                                <div id="management-qualities">
+                                    <div>
+                                        <ul class="list-group ">
+                                            <li class="d-flex">
+                                                <i class="bi bi-cash-coin pe-3"></i>
+                                                <p>Financial</p>
+                                            </li>
+                                            <li class="d-flex">
+                                                <i class="bi bi-person-hearts"></i>
+                                                <p>Team and Projects</p>
+                                            </li>
+                                            <li class="d-flex">
+                                                <i class="bi bi-chat-dots-fill"></i>
+                                                <p>Management</p>
+                                            </li>
+                                            <li class="d-flex">
+                                                <i class="bi bi-pc-display"></i>
+                                                <p>Techinical Support</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="industry-qualities">
+                                    <ul>
+                                        <li>not me ...............</li>
+                                        <li>not me ...............</li>
+                                        <li>not me ...............</li>
+                                        <li>not me ...............</li>
+                                        <li>not me ...............</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            
         </div>
-    </section>
+
+
 
 
     <!-- ------------------SCRIPTS --------------------- -->
-    <script  src="{%static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
 
 
-{% endblock %}
+    {% endblock %}
