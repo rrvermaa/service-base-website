@@ -5,56 +5,199 @@
      <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="vCard template project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap-4.1.2/bootstrap.min.css' %}">
+  <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="{% static 'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css' %}">
+
+  
+  <script
+    nonce="48cd32bd-2450-4967-a4d5-b80550a9fbf3">(function (w, d) { !function (a, b, c, d) { a[c] = a[c] || {}; a[c].executed = []; a.zaraz = { deferred: [], listeners: [] }; a.zaraz.q = []; a.zaraz._f = function (e) { return async function () { var f = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: f }) } }; for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g); a.zaraz.init = () => { var h = b.getElementsByTagName(d)[0], i = b.createElement(d), j = b.getElementsByTagName("title")[0]; j && (a[c].t = b.getElementsByTagName("title")[0].text); a[c].x = Math.random(); a[c].w = a.screen.width; a[c].h = a.screen.height; a[c].j = a.innerHeight; a[c].e = a.innerWidth; a[c].l = a.location.href; a[c].r = b.referrer; a[c].k = a.screen.colorDepth; a[c].n = b.characterSet; a[c].o = (new Date).getTimezoneOffset(); if (a.dataLayer) for (const n of Object.entries(Object.entries(dataLayer).reduce(((o, p) => ({ ...o[1], ...p[1] })), {}))) zaraz.set(n[0], n[1], { scope: "page" }); a[c].q = []; for (; a.zaraz.q.length;) { const q = a.zaraz.q.shift(); a[c].q.push(q) } i.defer = !0; for (const r of [localStorage, sessionStorage]) Object.keys(r || {}).filter((t => t.startsWith("_zaraz_"))).forEach((s => { try { a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s)) } catch { a[c]["z_" + s.slice(7)] = r.getItem(s) } })); i.referrerPolicy = "origin"; i.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(a[c]))); h.parentNode.insertBefore(i, h) };["complete", "interactive"].includes(b.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css'%}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
    <!-- Static CSS -->
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contact_responsive.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main_styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/education.css' %}">
+  <link rel="stylesheet" href="{% static 'css/experience.css' %}">
+  <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+  <link rel="stylesheet" href="{% static 'css/services.css' %}">
+  <link rel="stylesheet" href="{% static 'css/skills.css' %}">
+  <link rel="stylesheet" href="{% static 'css/testimonials.css' %}">
+
+  
+  
   <!-- script -->
-    <title>AIverse</title>
+    <title>Pinkal</title>
   </head>
 
   <body>
      <!-- -----------navbar one-------------- -->
 
-     <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container fw-lighter p-4">
-        <a class="navbar-brand" href="#"><i class="bi bi-telephone-fill main-color"></i> +91 (0) 9 870 8960</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          </ul>
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="navbar-brand" href="#">
-                <img src="static/media/images/logo/svg/logo-no-background.svg" style="width: 30vh;">
-              </a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <form class="d-flex" role="search">
-                <a class="navbar-brand" href="#"> <i class="bi bi-envelope-fill main-color"></i> info@AIverse.co.nz</a>
-              </form>
-            </li>
-          </ul>
+     <div class="super_container">
+
+      <header class="header">
+        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+          <div class="logo">Pinkal<span>.</span>CV</div>
+          <div class="main_nav d-flex flex-row align-items-end justify-content-start">
+            <ul class="d-flex flex-row align-items-center justify-content-start">
+              <li><a href="/">About</a></li>
+              <li><a href="/skills">Skills</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/experience">Experience</a></li>
+              <li><a href="/education">Education</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
+              <li><a href="/testimonials">Testimonials</a></li>
+              <li ><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="header_button ml-auto">
+              <a href="#">Available for freelance work</a>
+              <div class="d-flex flex-column align-items-center justify-content-center"><img src="{% static 'media/images/download.png' %}"
+                  alt></div>
+            </div>
+          </div>
+  
+          <div class="menu">
+            <div class="menu_content d-flex flex-row align-items-start justify-content-end">
+              <div class="hamburger ml-auto">menu</div>
+              <div class="menu_nav text-right">
+                <ul>
+                  <li><a href="/">About</a></li>
+                  <li><a href="/skills">Skills</a></li>
+                  <li><a href="/services">Services</a></li>
+                  <li><a href="/experience">Experience</a></li>
+                  <li><a href="/education">Education</a></li>
+                  <li><a href="/portfolio">Portfolio</a></li>
+                  <li><a href="/testimonials">Testimonials</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content_container">
+        <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
+  
+          <div class="general_info d-flex flex-xl-column flex-md-row flex-column">
+            <div>
+              <div class="general_info_image">
+                <div class="background_image" style="background-image: url('{% static 'media/images/me.jpg' %}')"></div>
+                <div class="header_button_2">
+                  <a href="#">Available for freelance work</a>
+                  <div class="d-flex flex-column align-items-center justify-content-center"><img src="static/media/images/download.png"
+                      alt></div>
+                </div>
+              </div>
+            </div>
+            <div class="general_info_content">
+              <div class="general_info_content_inner mCustomScrollbar" data-mcs-theme="minimal-dark">
+                <div class="general_info_title">General Information</div>
+                <ul class="general_info_list">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img
+                        src="{% static 'media/images/icon_1.png' %}" alt></div>
+                    <div class="general_info_text">Name: <span>Pinkal Sanoria</span></div>
+                  </li>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img
+                      src="{% static 'media/images/icon_7.png' %}" alt></div>
+                  <div class="general_info_text">Location: <span>India</span></div>
+                  </li>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img
+                        src={% static 'media/images/icon_2.png' %} alt></div>
+                    <div class="general_info_text">Date of Birth: <span>Jan 12, 1997</span></div>
+                  </li>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img
+                        src={% static 'media/images/icon_3.png' %} alt></div>
+                      <div class="general_info_text">Email: <span>pinkalsanoria123@gmail.com</span></div>
+                  </li>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img
+                        src={% static 'media/images/icon_4.png' %} alt></div>
+                    <div class="general_info_text">9805637665</div>
+                  </li>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="general_info_icon d-flex flex-column align-items-start justify-content-center"><img
+                        src={% static 'media/images/icon_5.png' %} alt></div>
+                    <div class="general_info_text"><a
+                        href="https://preview.colorlib.com/cdn-cgi/l/email-protection#50333f3e24313324103c393e2125357e333f3d">www.pinkal.cv
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+  
+                <div class="social_container">
+                  <ul class="d-flex flex-row align-items-start justify-content-start">
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% block content %}
+
+
+  
+          {% endblock %}
+
+        </div>
+        <div align="center">
+  
+          Copyright &copy;
+          <script data-cfasync="false"
+            src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+          <script>document.write(new Date().getFullYear());</script> All rights reserved.
         </div>
       </div>
-    </nav>
-    
+    </div>
+
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'styles/bootstrap-4.1.2/popper.js' %}"></script>
+    <script src="{% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %}"></script>
+    <script src="{% static 'plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' %}"></script>
+    <script src="{% static 'plugins/easing/easing.js' %}"></script>
+    <script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'plugins/greensock/TweenMax.min.js' %}"></script>
+    <script src="{% static 'plugins/greensock/TimelineMax.min.js' %}"></script>
+    <script src="{% static 'plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'plugins/greensock/animation.gsap.min.js' %}"></script>
+    <script src="{% static 'plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+    <script src="{% static 'plugins/progressbar/progressbar.js' %}"></script>
 
 
-     <!-- -----------end navbar one-------------- -->
 
 
-     <!-- -----------navbar Two-------------- -->
 
-     
 
-     <!-- -----------end navbar Two-------------- -->
-        
+    <script
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+    <script src="/static/js/contact.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+      integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+      data-cf-beacon='{"rayId":"81606469bfc66018","version":"2023.8.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}'
+      crossorigin="anonymous"></script>
 
   
    
@@ -67,9 +210,9 @@
       
     </section>
     
-    <!-- footer ed -->
+
     
-    <!-- ------------------SCRIPTS --------------------- -->
+
   
 
    
